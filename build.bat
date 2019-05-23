@@ -1,9 +1,14 @@
 echo %CMAKE_PREFIX_PATH%
 dir %CMAKE_PREFIX_PATH%
+echo %BONJOUR_SDK_HOME%
+dir %BONJOUR_SDK_HOME%
+echo ----------------------
 
 REM curl -fsS -o bi.exe https://binaries.symless.com/bonjour/bonjoursdksetup.exe
 
 msiexec /i bonjour-installer\BonjourSDK64.msi /qn /norestart /l*v bi-log.txt
+
+echo ----------------------
 
 REM /qn /norestart /l*v
 REM ALLUSERS=1 DISABLEDESKTOPSHORTCUT=1 ADDDESKTOPICON=0 ADDSTARTMENU=0
