@@ -18,5 +18,5 @@ artifacts:
     name: bonjour-install-log.txt
   - path: bonjoursdk-install-log.txt
     name: bonjoursdk-install-log.txt
-  - path: build
-    name: build
+  - path: build\bin\Debug
+    name: build\bin\Debug
