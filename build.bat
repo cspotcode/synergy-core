@@ -29,7 +29,11 @@ msbuild synergy-core.sln /p:Platform="x64" /p:Configuration=Release /m
 cd ..
 copy ext\openssl\windows\x64\bin\* build\
 
-copy C:\Qt\5.9.7\msvc2017_64\Qt5Networkd.dll build\bin\Release\Qt5Networkd.dll
-copy C:\Qt\5.9.7\msvc2017_64\Qt5Widgetsd.dll build\bin\Release\Qt5Widgetsd.dll
-copy C:\Qt\5.9.7\msvc2017_64\Qt5Guid.dll build\bin\Release\Qt5Guid.dll
-copy C:\Qt\5.9.7\msvc2017_64\Qt5Cored.dll build\bin\Release\Qt5Cored.dll
+copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Networkd.dll build\bin\Release\Qt5Networkd.dll
+copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Widgetsd.dll build\bin\Release\Qt5Widgetsd.dll
+copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Guid.dll build\bin\Release\Qt5Guid.dll
+copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Cored.dll build\bin\Release\Qt5Cored.dll
+copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Network.dll build\bin\Release\Qt5Network.dll
+copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Widgets.dll build\bin\Release\Qt5Widgets.dll
+copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Gui.dll build\bin\Release\Qt5Gui.dll
+copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Core.dll build\bin\Release\Qt5Core.dll
