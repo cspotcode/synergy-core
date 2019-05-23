@@ -7,6 +7,6 @@ image: Visual Studio 2015
 #  - echo true
 configuration: Release
 environment:
-  CMAKE_PREFIX_PATH: C:\\Qt\\5.9.5\\msvc2017_64
+  CMAKE_PREFIX_PATH: C:\Qt\5.9.5\msvc2017_64
 build_script:
   - ./build.bat
