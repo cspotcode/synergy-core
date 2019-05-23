@@ -37,3 +37,4 @@ copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Network.dll build\bin\Release\Qt5Network.dll
 copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Widgets.dll build\bin\Release\Qt5Widgets.dll
 copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Gui.dll build\bin\Release\Qt5Gui.dll
 copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Core.dll build\bin\Release\Qt5Core.dll
+copy C:\Qt\5.9.7\msvc2017_64\plugins\platforms\qwindows.dll build\bin\Release\qwindows.dll
