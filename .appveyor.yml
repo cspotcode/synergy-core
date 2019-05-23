@@ -1,0 +1,12 @@
+version: 1.0
+branches:
+  only:
+    - ci
+image: Visual Studio 2015
+#install:
+#  - echo true
+configuration: Release
+environment:
+#  CMAKE_PREFIX_PATH: C:\\Qt\\5.9.5\\msvc2017_64
+build_script:
+  - build.bat
