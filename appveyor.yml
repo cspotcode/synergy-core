@@ -8,6 +8,7 @@ image: Visual Studio 2017
 configuration: Release
 environment:
   CMAKE_PREFIX_PATH: C:\Qt\5.9.7\msvc2017_64
+  BONJOUR_SDK_HOME: C:\Program Files\Bonjour SDK\
 build_script:
   - ./build.bat
 artifacts:
