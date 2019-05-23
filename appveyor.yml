@@ -19,4 +19,4 @@ artifacts:
   - path: bonjoursdk-install-log.txt
     name: bonjoursdk-install-log.txt
   - path: build\bin\Release
-    name: build\bin\Release
+    name: Release
