@@ -11,6 +11,10 @@ echo %CMAKE_PREFIX_PATH%
 dir %CMAKE_PREFIX_PATH%
 echo %BONJOUR_SDK_HOME%
 dir %BONJOUR_SDK_HOME%
+echo C:\Program Files\Bonjour SDK\
+dir C:\Program Files\Bonjour SDK\
+echo C:\Program Files (x86)\Bonjour SDK\
+dir C:\Program Files (x86)\Bonjour SDK\
 
 echo -------BUILD---------------
 
