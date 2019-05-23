@@ -12,6 +12,6 @@ build_script:
   - ./build.bat
 artifacts:
   - path: /build/CMakeFiles/CMakeOutput.log
-    name CMakeOutput.log
+    name: CMakeOutput.log
   - path: bi-log.txt
     name: bi-log.txt
