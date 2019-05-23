@@ -14,5 +14,7 @@ build_script:
 artifacts:
   - path: /build/CMakeFiles/CMakeOutput.log
     name: CMakeOutput.log
-  - path: bi-log.txt
-    name: bi-log.txt
+  - path: bonjour-install-log.txt
+    name: bonjour-install-log.txt
+  - path: bonjoursdk-install-log.txt
+    name: bonjoursdk-install-log.txt

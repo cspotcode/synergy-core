@@ -2,7 +2,8 @@ echo -------MSI INSTALL---------------
 
 REM curl -fsS -o bi.exe https://binaries.symless.com/bonjour/bonjoursdksetup.exe
 
-msiexec /i bonjour-installer\BonjourSDK64.msi /qn /norestart /l*v bi-log.txt
+msiexec /i bonjour-installer\Bonjour64.msi /qn /norestart /l*v bonjour-install-log.txt
+msiexec /i bonjour-installer\BonjourSDK64.msi /qn /norestart /l*v bonjoursdk-install-log.txt
 
 echo --------LOG DIRECTORIES--------------
 
