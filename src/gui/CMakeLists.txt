@@ -21,6 +21,12 @@ if (WIN32)
     set (LEGACY_GUI_RC_FILES res/win/Synergy.rc)
 endif()
 
+# these flags make a static executable (placed right before add_executable)
+# https://stackoverflow.com/a/24671474/531727
+SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+SET(BUILD_SHARED_LIBS OFF)
+SET(CMAKE_EXE_LINKER_FLAGS "-static")
+
 add_executable (synergy WIN32
     ${LEGACY_GUI_SOURCE_FILES}
     ${LEGACY_GUI_UI_FILES}
