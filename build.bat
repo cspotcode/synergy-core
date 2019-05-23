@@ -1,5 +1,5 @@
 echo %CMAKE_PREFIX_PATH%
-dir C:\Qt\5.9.5\msvc2017_64
+dir %CMAKE_PREFIX_PATH%
 mkdir build
 cd build
 call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"
