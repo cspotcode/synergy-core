@@ -23,9 +23,11 @@ endif()
 
 # these flags make a static executable (placed right before add_executable)
 # https://stackoverflow.com/a/24671474/531727
-SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
-SET(BUILD_SHARED_LIBS OFF)
-SET(CMAKE_EXE_LINKER_FLAGS "-static")
+# DISABLED because it doesn't work.  I think because Qt and
+# Bonjour don't distribute static binaries.
+#SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+#SET(BUILD_SHARED_LIBS OFF)
+#SET(CMAKE_EXE_LINKER_FLAGS "-static")
 
 add_executable (synergy WIN32
     ${LEGACY_GUI_SOURCE_FILES}
