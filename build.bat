@@ -27,6 +27,7 @@ call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat"
 cmake -G "Visual Studio 14 2015 Win64" -DCMAKE_BUILD_TYPE=Release ..
 msbuild synergy-core.sln /p:Platform="x64" /p:Configuration=Release /m
 cd ..
+dir ext\openssl\windows\x64\bin
 copy ext\openssl\windows\x64\bin\* build\
 
 copy C:\Qt\5.9.7\msvc2017_64\bin\Qt5Networkd.dll build\bin\Release\Qt5Networkd.dll
