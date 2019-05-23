@@ -10,3 +10,8 @@ environment:
   CMAKE_PREFIX_PATH: C:\Qt\5.9.7\msvc2017_64
 build_script:
   - ./build.bat
+artifacts:
+  - path: /build/CMakeFiles/CMakeOutput.log
+    name CMakeOutput.log
+  - path: bi-log.txt
+    name: bi-log.txt
