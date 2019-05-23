@@ -33,30 +33,33 @@ SerialKey::SerialKey(Edition edition):
     m_warnTime(ULLONG_MAX),
     m_expireTime(ULLONG_MAX),
     m_edition(edition),
-    m_trial(false)
+    m_trial(false),
+    m_email("")
 {
 }
 
 SerialKey::SerialKey(std::string serial) :
     m_userLimit(1),
-    m_warnTime(0),
-    m_expireTime(0),
-    m_edition(kBasic),
-    m_trial(true)
+    m_warnTime(ULLONG_MAX),
+    m_expireTime(ULLONG_MAX),
+    m_edition(kPro),
+    m_trial(false),
+    m_email("")
 {
-    string plainText = decode(serial);
-    bool valid = false;
-    if (!plainText.empty()) {
-        valid = parse(plainText);
-    }
-    if (!valid) {
-        throw std::runtime_error ("Invalid serial key");
-    }
+    // string plainText = decode(serial);
+    // bool valid = false;
+    // if (!plainText.empty()) {
+    //     valid = parse(plainText);
+    // }
+    // if (!valid) {
+    //     throw std::runtime_error ("Invalid serial key");
+    // }
 }
 
 bool
 SerialKey::isExpiring(time_t currentTime) const
 {
+    return false;
     bool result = false;
 
     if (m_trial) {
@@ -72,6 +75,7 @@ SerialKey::isExpiring(time_t currentTime) const
 bool
 SerialKey::isExpired(time_t currentTime) const
 {
+    return false;
     bool result = false;
 
     if (m_trial) {
@@ -87,6 +91,7 @@ SerialKey::isExpired(time_t currentTime) const
 bool
 SerialKey::isTrial() const
 {
+    return false;
     return m_trial;
 }
 

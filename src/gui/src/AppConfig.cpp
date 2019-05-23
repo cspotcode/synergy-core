@@ -157,7 +157,7 @@ void AppConfig::loadSettings()
                                         QVariant(static_cast<int>(defaultElevateMode)));
     }
     m_ElevateMode = static_cast<ElevateMode>(elevateMode.toInt());
-    m_Edition = static_cast<Edition>(settings().value("edition", kUnregistered).toInt());
+    m_Edition = static_cast<Edition>(settings().value("edition", kPro).toInt());
     m_ActivateEmail = settings().value("activateEmail", "").toString();
     m_CryptoEnabled = settings().value("cryptoEnabled", true).toBool();
     m_AutoHide = settings().value("autoHide", false).toBool();
